@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a weather application with Qt Designer and API from https://goweather.herokuapp.com/weather/{location}
+Create a weather application with Qt Designer and API from https://goweather.herokuapp.com/weather
 
 ## How to install
 ```
