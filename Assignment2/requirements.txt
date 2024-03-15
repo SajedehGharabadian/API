@@ -1,0 +1,5 @@
+fastapi==0.110.0
+matplotlib==3.5.3
+opencv_python==4.9.0.80
+opencv_python_headless==4.9.0.80
+Requests==2.31.0
