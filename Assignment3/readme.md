@@ -6,9 +6,9 @@
 
 ◻️ See all solar system: https://api-wm3z.onrender.com/plants
 
-◻️ See information of one plants: https://api-wm3z.onrender.com/plants/{plant-name}
+◻️ If you see information of one plant, you should enter the name of the plants: https://api-wm3z.onrender.com/plants/{plant-name}
 
-◻️ See image of one plants: https://api-wm3z.onrender.com/plants/{plant-name}/image
+◻️ If you see image of one plant, you should enter the name of the plants: https://api-wm3z.onrender.com/plants/{plant-name}/image
 
 ## How to install
 ```
