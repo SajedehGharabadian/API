@@ -7,7 +7,7 @@ from fastapi.responses import StreamingResponse,FileResponse
 import os
 
 
-information_of_plants = {
+information_of_planets = {
     "sun":{
         "radius":696340000,
         "age":"4.5 billion years",
@@ -105,23 +105,23 @@ def read_root():
     mes = 'Hi! Welcome to my API.The Solar System API provides information for thousands of all solar system planets and their moons.'
     return mes
 
-@app.get('/plants') 
-def inf_plants():
-    return information_of_plants
+@app.get('/planets') 
+def inf_planets():
+    return information_of_planets
 
-@app.get('/plants/{plant_name}')
-def inf_plant_name(plant_name:str):
-    if plant_name in information_of_plants:
-        return information_of_plants[plant_name]
+@app.get('/planets/{planet_name}')
+def inf_planet_name(planet_name:str):
+    if planet_name in information_of_planets:
+        return information_of_planets[planet_name]
     else:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,detail="Plant not found,please try again")
     
-@app.get("/plants/{plant_name}/image")
-def image_plants(plant_name:str):
-    if plant_name in information_of_plants:
-        image = cv2.imread('images/'+plant_name+'.jpg')
+@app.get("/planets/{planet_name}/image")
+def image_planets(planet_name:str):
+    if planet_name in information_of_planets:
+        image = cv2.imread('images/'+planet_name+'.jpg')
         _, encode_img= cv2.imencode('.jpg',image)
         return StreamingResponse(io.BytesIO(encode_img.tobytes()),media_type='image/jpg')
     else:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST
-                             ,detail="Plant not found,please try again")
+                             ,detail="Planet not found,please try again")
