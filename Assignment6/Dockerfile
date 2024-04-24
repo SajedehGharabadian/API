@@ -1,6 +1,6 @@
 FROM python
 
-WORKDIR /SQL_app
+WORKDIR /usr/src
 
 # 
 COPY ./requirements.txt ./requirements.txt
