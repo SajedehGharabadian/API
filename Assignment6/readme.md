@@ -2,7 +2,9 @@
 
 ## Description
 
-We used SQLAlchemy to connect postresql to fastapi with
+We used SQLAlchemy to connect postresql to fastapi 
+
+We can see result with [liara](https://liara.ir/)
 
 ## How to install
 
@@ -13,6 +15,6 @@ pip install -r requirements.txt
 ## How to run
 
 ```
-https://todo-app-docker.liara.run
+https://expert-sql.liara.run/docs
 ```
 
